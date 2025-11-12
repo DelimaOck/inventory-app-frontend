@@ -27,7 +27,7 @@ jobs:
           node-version: '20'
 
       - name: setup pages
-        uses: actions/configurre-pages@v5
+        uses: actions/configure-pages@v5
         with:
           static_site_generator: next
 
@@ -38,7 +38,7 @@ jobs:
         run: npm run build
 
       - name: upload artifact
-        uses: action/upload-pages-artifact@v3
+        uses: actions/upload-pages-artifact@v3
         with:
           path: ./out
 
@@ -50,4 +50,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: DEPLOY GITHUB pages
-        uses: action/deploy-pages@v3
+        uses: actions/deploy-pages@v3
