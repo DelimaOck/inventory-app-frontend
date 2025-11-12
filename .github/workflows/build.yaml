@@ -1,0 +1,15 @@
+name: Build next js project
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: CHECKOUT REPO
+        uses: actions/checkout@v4
+      - name: SETUP NODE
+        uses: actions/checkout@v4
