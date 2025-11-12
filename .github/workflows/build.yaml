@@ -48,6 +48,6 @@ jobs:
       url: ${{ step.deployment.outputs.page_url }}
     needs: build
     runs-on: ubuntu-latest
-    step:
+    steps:
       - name: DEPLOY GITHUB pages
-      - uses: action/deploy-pages@v3
+        uses: action/deploy-pages@v3
